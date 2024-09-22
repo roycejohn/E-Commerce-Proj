@@ -10,6 +10,7 @@ import {
 
 
 import { ModalProvider } from "@/providers/modal-provider";
+import { ToasterProvider } from "@/providers/toast-provider";
 
 import "./globals.css";
 
@@ -39,6 +40,7 @@ export default function RootLayout({
             </SignedIn>
           </header>
           <main>
+            <ToasterProvider />
             <ModalProvider/>
             {children}
           </main>
