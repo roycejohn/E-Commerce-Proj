@@ -30,7 +30,8 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
-          <header className="flex justify-between p-5">
+          {/* new version of AUTH as per DOCs */}
+          {/* <header className="flex justify-between p-5">
             <h1> Ecomerce Admin </h1>
             <SignedOut>
               <SignInButton />
@@ -38,7 +39,7 @@ export default function RootLayout({
             <SignedIn>
               <UserButton showName />
             </SignedIn>
-          </header>
+          </header> */}
           <main>
             <ToasterProvider />
             <ModalProvider/>
